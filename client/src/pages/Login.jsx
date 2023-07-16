@@ -1,6 +1,15 @@
 import React from 'react'
+import { useState } from 'react'
+
+
+
 
 export default function login() {
+  const [data, setData] = useState({
+    email: '',
+    password: '',
+
+  })
 
 
   const loginUser = (e) => {
