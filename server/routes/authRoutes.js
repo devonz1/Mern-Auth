@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const cors = require ('cors')
+const cors = require ('cors');
+const { test } = require ('../controllers/authController')
 
 
 
@@ -12,3 +13,9 @@ router.use(
      })
 
 )
+
+router.get('/', test)
+
+module.exports = router
+
+ 

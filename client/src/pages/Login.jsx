@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import axios from 'axios'
 
 
 
@@ -14,7 +15,7 @@ export default function login() {
 
   const loginUser = (e) => {
     e.preventDefault()
-
+  axios.get('/')
   }
   return (
     <div>
