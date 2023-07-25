@@ -2,6 +2,14 @@ const test = (req, res) =>{
     res.json('test is working')
 }
 
-module.exports = {
-    test
+
+const registerUser = (req, res) =>{
+    
 }
+
+module.exports = {
+    test,
+    registerUser
+}
+
+ 

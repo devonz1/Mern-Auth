@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const cors = require('cors');
-const { test } = require('../controllers/authController')
+const { test, registerUser} = require('../controllers/authController')
 
 
 
@@ -15,9 +15,9 @@ router.use(
 )
 
 router.get('/', test)
-router.post('/register') /// This will allow the  user to register on our app and after that we will
-// be sending the post request to our endpoint of register which will add the user registration information to our database.
-
+router.post('/register', registerUser)  
 module.exports = router
 
 
+//Line 18 This will allow the  user to register on our app and after that we will
+// be sending the post request to our endpoint of register which will add the user registration information to our database.
