@@ -9,7 +9,6 @@ mongoose.connect(process.env.MONGOS_URL)
 .then(()=> console.log ('Database Connected'))
 .catch((err) => console.log ('Database not connected', err))
 
-
 //middleware 
 app.use(express.json())
 

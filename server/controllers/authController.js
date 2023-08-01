@@ -1,9 +1,12 @@
+const User = require('../models/user')
+
+
 const test = (req, res) =>{
     res.json('test is working')
 }
 
 
-const registerUser = (req, res) =>{
+const registerUser = async (req, res) =>{
     try {
     const {name, email , password} = req.body;
      // check if name was entered
@@ -14,9 +17,27 @@ const registerUser = (req, res) =>{
      };
      // check is password good
      if(!password || password.length < 6 ){
-        return res.json()
-     }
-    } catch {error}{
+        return res.json(
+            {
+              error: 'Password is required and should be at least 6 characters long '  
+            } )
+     };
+     
+      //check email
+      const exist = await User.findOne((email));
+      if (exist ){
+        return res.json(
+          { error: 'Email is taken already'
+        })
+    }
+
+    const user = await User.create({
+        name, email, password
+    })
+
+    return res.json(user)
+    } catch {error}{ 
+        console.log(error)
 
     }
 }
@@ -26,4 +47,7 @@ module.exports = {
     registerUser
 }
 
- 
+ ///Line 26 we will be checking our database with the finOne method
+ //to see if the email the user has chosen to use has been taken already
+ //by another user and if it has we will return 
+ // a json response with  an error message that says  the "email is taken already".
