@@ -1,7 +1,8 @@
 const express = require('express');
 const dotenv =  require ('dotenv').config()
 const cors = require ('cors');
-const {mongoose} =require('mongoose')
+const {mongoose} =require('mongoose');
+
 const app = express();
 
 //database connection
@@ -14,8 +15,8 @@ app.use(express.json())
 
 app.use('/', require ('./routes/authRoutes'))
 
-const port = 8000;
-app.listen(port,()=> console.log(`server is running on port ${port}`))
+const Port = 8000;
+app.listen(Port,()=> console.log(`server is running on port ${Port}`))
 
 
 //line 7 we are connecting our database to our app

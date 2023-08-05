@@ -47,6 +47,11 @@ module.exports = {
     registerUser
 }
 
+
+///Line 4 we have created a test that will test the backend endpoints with a req and resp
+/// to make sure everything is workign fine and we will send back a res.json that
+//the test is working.
+
  ///Line 26 we will be checking our database with the finOne method
  //to see if the email the user has chosen to use has been taken already
  //by another user and if it has we will return 
