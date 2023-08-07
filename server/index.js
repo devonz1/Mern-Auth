@@ -15,8 +15,8 @@ app.use(express.json())
 
 app.use('/', require ('./routes/authRoutes'))
 
-const Port = 8000;
-app.listen(Port,()=> console.log(`server is running on port ${Port}`))
+const port = 8000;
+app.listen(port,()=> console.log(`server is running on port ${port}`))
 
 
 //line 7 we are connecting our database to our app
