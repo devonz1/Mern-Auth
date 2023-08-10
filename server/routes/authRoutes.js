@@ -9,7 +9,7 @@ const { test, registerUser } = require('../controllers/authController')
 router.use(
      cors({
           credentials: true,
-          origin: 'http://127.0.0.1:5173',
+          origin: 'http://localhost:5173',
           allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept"],
           methods: ["POST", "PUT", "GET", "DELETE"],
      })
