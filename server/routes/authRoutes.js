@@ -11,7 +11,7 @@ router.use(
           credentials: true,
           allowOrigin: 'http://127.0.0.1:5173', 
           allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept"],
-          allowedMethods: [POST, PUT, GET, DELETE],
+          allowedMethods: ["POST", "PUT", "GET", "DELETE"],
      })
 
 )
