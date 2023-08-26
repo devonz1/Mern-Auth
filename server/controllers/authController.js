@@ -1,4 +1,5 @@
 const User = require('../models/user')
+const {hashPassword, comparePassword} = require('../helpers/auth')
 
 
 const test = (req, res) =>{
@@ -47,6 +48,10 @@ module.exports = {
     registerUser
 }
 
+
+
+/*Line 2 we have imported the hashpassword and compare password
+ function from the helpers file*/
 
 ///Line 4 we have created a test that will test the backend endpoints with a req and resp
 /// to make sure everything is workign fine and we will send back a res.json that
