@@ -80,11 +80,16 @@ const loginUser = async (req, res) =>{
   }
 }
 
+const getProfile = (req, res) =>{
+
+}
+
 
 module.exports = {
     test,
     registerUser,
-    loginUser
+    loginUser,
+  getProfile
 };
 
 
