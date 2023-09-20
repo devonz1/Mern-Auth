@@ -83,7 +83,9 @@ const loginUser = async (req, res) =>{
 const getProfile = (req, res) =>{
 const {token} = req.cookies
 if (token){
-  jwt.verify(token,process.env.JWT_SECRET,)
+  jwt.verify(token,process.env.JWT_SECRET,{},(err,user)=>{
+    
+  })
 }
 }
 
