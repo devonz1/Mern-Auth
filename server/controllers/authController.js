@@ -115,3 +115,6 @@ module.exports = {
  //to see if the email the user has chosen to use has been taken already
  //by another user and if it has we will return 
  // a json response with  an error message that says  the "email is taken already".
+
+ // Line number 83 we are using a JSon webtoken to make sure the user that is 
+ // trying to access their profile is who they say they are
