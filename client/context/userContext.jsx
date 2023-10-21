@@ -14,8 +14,11 @@ export function UserContextProvider({children}){
     }
  }, [])
     return (
-      <UserContext.Provider value={[user, setUser]}> 
+      <UserContext.Provider value={{user, setUser}}> 
         {children}
       </UserContext.Provider>  
     )
 }
+
+//line 17 we are using USercontext so we can manage the state throughout the 
+//entire app.

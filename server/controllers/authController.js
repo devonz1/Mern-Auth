@@ -119,4 +119,4 @@ module.exports = {
  // Line number 83 we are using a JSon webtoken to make sure the user that is 
  // trying to access their profile is who they say they are and were gonna use a 
  // if else statement to verify if the json webtoken is the correct one and 
- // the user making the request is the correct user.
+ // the user making the request to Login is the correct user.
