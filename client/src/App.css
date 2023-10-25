@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+   
 }
 
 
@@ -10,10 +11,17 @@ li{
   list-style: none;
   display: inline;
   text-align: center;
-  padding:100px;
+  padding:80px;
   text-decoration: none;
-   
+
 }
+
+.nam1{
+  color: beige;
+  margin-left: 20px;
+   padding: 20px;
+}
+
 
 .logo {
   height: 6em;

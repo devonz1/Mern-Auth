@@ -37,11 +37,11 @@ export default function Register() {
   return (
     <div> 
       <form onSubmit={registerUser}>
-        <label>Name</label> 
+        <label className='nam1'>Name</label> 
         <input type='text' placeholder='enter name...' value ={data.name} onChange={(e)=> setData({...data,name:e.target.value})}/>
-        <label>Email</label>
+        <label className='nam1'>Email</label>
         <input type='email' placeholder='enter email...' value ={data.email} onChange={(e)=> setData({...data,email:e.target.value})}/>
-        <label>Password</label>
+        <label className='nam1'>Password</label>
         <input type='password' placeholder='enter password...' value ={data.password} onChange={(e)=> setData({...data,password:e.target.value})}/>
         <button type='submit'>Submit</button>
       </form>
